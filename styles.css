@@ -642,6 +642,31 @@ body {
     transform: translateY(-2px);
 }
 
+
+.offer-carousel {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+
+body {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal que envuelve todo el contenido */
+.main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .hamburger {
