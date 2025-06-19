@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velas Calimaya - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Carousel superior de ofertas -->
+    <div class="offer-carousel">
+        <div class="offer-text">
+            <span>🔥 OFERTAS DE MEDIO AÑO 2025 🔥 DESCUENTOS ESPECIALES 🔥 OFERTAS DE MEDIO AÑO 2025 🔥 DESCUENTOS
+                ESPECIALES 🔥</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🕯️ Velas Calimaya</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner principal -->
+    <section class="hero-banner" id="inicio">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="./img/ppal.png" alt="Vela Principal Calimaya" class="main-candle-img">
+            </div>
+            <div class="hero-content">
+                <h1>Vela Aromática Premium</h1>
+                <p class="hero-description">
+                    Disfruta de nuestras velas artesanales hechas con cera 100% natural.
+                    Perfectas para crear un ambiente relajante y acogedor en tu hogar.
+                </p>
+                <div class="price-section">
+                    <span class="price">$25</span>
+                    <span class="currency">pesos</span>
+                </div>
+                <div class="offer-badge">
+                    <span class="offer-text">¡Oferta 3x2!</span>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Vela Premium', 25)">
+                    <i class="fas fa-cart-plus"></i>
+                    Agregar al Carrito
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de productos -->
+    <section class="products-gallery" id="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Modelos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/43Angeles.png" alt="Modelo 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Lavanda</h3>
+                        <p>$20</p>
+                        <button class="add-btn" onclick="addToCart('Vela Lavanda', 20)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/43Angeles2.png" alt="Modelo 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Vainilla</h3>
+                        <p>$22</p>
+                        <button class="add-btn" onclick="addToCart('Vela Vainilla', 22)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/buddah.jpg" alt="Modelo 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Citrus</h3>
+                        <p>$18</p>
+                        <button class="add-btn" onclick="addToCart('Vela Citrus', 18)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/34burbujas.jpg" alt="Modelo 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Rosa</h3>
+                        <p>$24</p>
+                        <button class="add-btn" onclick="addToCart('Vela Rosa', 24)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/34detodo.jpg" alt="Modelo 5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Eucalipto</h3>
+                        <p>$26</p>
+                        <button class="add-btn" onclick="addToCart('Vela Eucalipto', 26)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/34flores.png" alt="Modelo 6">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Canela</h3>
+                        <p>$23</p>
+                        <button class="add-btn" onclick="addToCart('Vela Canela', 23)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/buddah.jpg" alt="Modelo 7">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Jazmín</h3>
+                        <p>$21</p>
+                        <button class="add-btn" onclick="addToCart('Vela Jazmín', 21)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/candlenight.jpg" alt="Modelo 8">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vela Chocolate</h3>
+                        <p>$25</p>
+                        <button class="add-btn" onclick="addToCart('Vela Chocolate', 25)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de GIFs -->
+    <section class="gifs-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Velas en Acción</h2>
+            <div class="gifs-container">
+                <div class="gif-placeholder">
+                    <div class="gif-frame">
+
+                        <video src="./videos/arbolito.mp4" autoplay loop muted playsinline width="640" height="360">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+
+                        <!-- <p>GIF 1<br>9:16</p>
+                        <span>Aquí va tu primer GIF</span> -->
+                    </div>
+                </div>
+                <div class="gif-placeholder">
+                    <div class="gif-frame">
+                        <video src="./videos/abejas.mp4" autoplay loop muted playsinline width="640" height="360">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <!-- <p>GIF 2<br>9:16</p>
+                        <span>Aquí va tu segundo GIF</span> -->
+                    </div>
+                </div>
+                <div class="gif-placeholder">
+                    <div class="gif-frame">
+                        <video src="./videos/ositos.mp4" autoplay loop muted playsinline  width="640" height="360">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <!-- <p>GIF 3<br>9:16</p>
+                        <span>Aquí va tu tercer GIF</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas de redes sociales -->
+    <section class="reviews-section" id="reseñas">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="reviews-carousel">
+                <div class="reviews-container">
+                    <div class="review-card">
+                        <img src="./ref/res.png" alt="Reseña 1">
+                    </div>
+                    <div class="review-card">
+                        <img src="./ref/res.png" alt="Reseña 2">
+                    </div>
+                    <div class="review-card">
+                        <img src="./ref/res.png" alt="Reseña 3">
+                    </div>
+                    <div class="review-card">
+                        <img src="./ref/res.png" alt="Reseña 4">
+                    </div>
+                    <div class="review-card">
+                        <img src="./ref/res.png" alt="Reseña 5">
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn" onclick="slideReviews(-1)">❮</button>
+                <button class="carousel-btn next-btn" onclick="slideReviews(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantía y premios -->
+    <section class="guarantee-section">
+        <div class="container">
+            <h2 class="section-title">Garantía y Reconocimientos</h2>
+            <div class="guarantee-grid">
+                <div class="guarantee-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garantía de Calidad</h3>
+                    <p>100% cera natural, productos artesanales</p>
+                </div>
+                <div class="guarantee-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Premio Mejor Aroma</h3>
+                    <p>Reconocidos por la calidad de nuestras fragancias</p>
+                </div>
+                <div class="guarantee-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Eco-Friendly</h3>
+                    <p>Comprometidos con el medio ambiente</p>
+                </div>
+                <div class="guarantee-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Envío Gratis</h3>
+                    <p>En compras mayores a $50</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de compra final -->
+    <section class="final-purchase">
+        <div class="container">
+            <div class="purchase-content">
+                <h2>¿Listo para disfrutar nuestras velas?</h2>
+                <p>Crea el ambiente perfecto en tu hogar</p>
+                <button class="final-cart-btn" onclick="showCart()">
+                    <i class="fas fa-cart-plus"></i>
+                    Ver Carrito y Comprar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Texto con efecto typing -->
+    <section class="typing-section">
+        <div class="container">
+            <h2 class="typing-text" id="typing-text"></h2>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🕯️ Velas Calimaya</h3>
+                    <p>Creando momentos únicos con nuestras velas artesanales</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> info@velascalimaya.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Velas Calimaya. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal del carrito -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Los items del carrito se agregarán aquí dinámicamente -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cartTotal">0</span></h3>
+            </div>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
