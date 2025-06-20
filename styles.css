@@ -57,10 +57,10 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
-}
+} */
 
 /* Navbar */
 .navbar {
